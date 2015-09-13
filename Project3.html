@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Euler Project: Project 3 - The Odin Project</title>
+  </head>
+  <body>
+	<h1>The prime factors of 13195 are 5, 7, 13 and 29.
+
+What is the largest prime factor of the number 600851475143 ?</h1>
+
+<h2>Method: Javascript Code </h2>
+<br>
+<h3>
+
+	var factor=0;										<br>
+														<br>
+	var prime = function(number){						<br>
+														<br>
+		for(var i=2; i less than number; i++){			<br>
+														<br>
+				if(number%i===0)						<br>
+					{									<br>
+														<br>
+						factor = i;						<br>
+						number = number/i;				<br>
+						i--;							<br>
+														<br>
+														<br>				
+					}									<br>
+														<br>
+														<br>
+		};												<br>	
+		alert(number);									<br>
+	};													<br>
+														<br>
+	prime(600851475143);								<br>
+	
+</h3>
+
+														<br>
+	<h3>Answer: 6857 </h3>
+
+
+  <script>
+	
+	var factor=0;
+	
+	
+	var prime = function(number){
+	
+		for(var i=2; i<number; i++){
+		
+				if(number%i===0)
+					{
+					
+						factor = i;
+						number = number/i;
+						i--;
+
+					
+					}
+						
+		
+		};		
+		alert(number);
+	};
+	
+	prime(600851475143);
+	
+
+  </script>
+  
+  
+  
+  </body>
+</html>
